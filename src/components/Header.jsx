@@ -16,9 +16,9 @@ const Header = () => {
   })
   return (
     <header className={`${isActive ? "bg-blue-700" : "bg-blue-800"} py-4 fixed w-full z-10 transition-all`}>
-      <div className='container mx-auto flex justify-between '>
+      <div className='container mx-auto flex justify-between items-center '>
         <Link to='/'>
-          <div className='text-white'>Header</div>
+          <div className='text-white text-sm md:text-lg font-semibold'>E-Commerce Site</div>
         </Link>
         <div className='cursor-pointer relative' onClick={() => { setIsOpen(!isOpen) }}>
           <BsBag className='text-3xl text-white' />
